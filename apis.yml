@@ -1,4 +1,16 @@
 aid: ondisplay
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ondisplay.png
 name: ONDisplay
 description: 'ONDisplay is a company surfaced as a portfolio company of matrix-partners and added to the
   API Evangelist network as a stub for enrichment. Sector: b2b. This profile is a lead awaiting the enrichment
@@ -12,7 +24,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-enrichment-probe:
+  date: '2026-07-20'
+  finding: no-active-surface
+  detail: >-
+    No live company or API surface found. Candidate domains probed on 2026-07-20:
+    ondisplay.com (TLS handshake failure / dead), ondisplay.io + ondisplay.co +
+    ondisplay.ai (parked, listed for sale via GoDaddy/Afternic). No matching
+    provider in the APIs.io catalog. Consistent with the historical ONDisplay
+    Inc., an early Matrix Partners portfolio company acquired by Vignette in 2000;
+    no successor developer/API presence exists to enrich.
 tags:
 - Company
 - B2B
@@ -22,3 +44,8 @@ maintainers:
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
